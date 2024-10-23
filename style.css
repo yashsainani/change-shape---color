@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(240, 251, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: #fff;
+    width: 40rem;
+    height: 40rem;
+    padding: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 6rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.dynamic-div {
+    width: 15rem;
+    height: 15rem;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    width: 8rem;
+    height: 8rem;
+    background-color: #fff;
+}
+
+.shape.square {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.shape.frame {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%, 20% 20%, 20% 0%, 0% 0%);
+}
+
+.shape.triangle {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.shape.circle {
+    clip-path: circle(50%);
+}
+
+.shape.arrow {
+    clip-path: polygon(0% 50%, 100% 0%, 100% 30%, 50% 30%, 50% 100%, 0% 100%);
+}
+
+.shape.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.shape.plus {
+    clip-path: polygon(0% 30%, 30% 30%, 30% 0%, 70% 0%, 70% 30%, 100% 30%, 100% 70%, 70% 70%, 70% 100%, 30% 100%, 30% 70%, 0% 70%);
+}
+
+.shape.pentagon {
+    clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+}
+
+.shape.hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.shape.diamond {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.shape.trapezoid {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.shape.cross {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);;
+}
+
+.shape.left-point {
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.shape.right-point {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.shape.parallal {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.shape.cheg {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.btns {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.btn {
+    width: 50%;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #292929;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.btn:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
