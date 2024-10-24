@@ -46,67 +46,67 @@ body {
     background-color: #fff;
 }
 
-.shape.square {
+.square {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.shape.frame {
+.frame {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%, 20% 20%, 20% 0%, 0% 0%);
 }
 
-.shape.triangle {
+.triangle {
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
-.shape.circle {
+.circle {
     clip-path: circle(50%);
 }
 
-.shape.arrow {
+.arrow {
     clip-path: polygon(0% 50%, 100% 0%, 100% 30%, 50% 30%, 50% 100%, 0% 100%);
 }
 
-.shape.star {
+.star {
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-.shape.plus {
+.plus {
     clip-path: polygon(0% 30%, 30% 30%, 30% 0%, 70% 0%, 70% 30%, 100% 30%, 100% 70%, 70% 70%, 70% 100%, 30% 100%, 30% 70%, 0% 70%);
 }
 
-.shape.pentagon {
+.pentagon {
     clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
 }
 
-.shape.hexagon {
+.hexagon {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.shape.diamond {
+.diamond {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-.shape.trapezoid {
+.trapezoid {
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-.shape.cross {
+.cross {
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);;
 }
 
-.shape.left-point {
+.left-point {
     clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 }
 
-.shape.right-point {
+.right-point {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
-.shape.parallal {
+.parallal {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.shape.cheg {
+.cheg {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 

@@ -1,15 +1,21 @@
 const div = document.querySelector('.dynamic-div');
-const shape = document.querySelector('.square');
+const shape = document.querySelector('.shape');
 
 document.getElementById('color')
-.addEventListener('click', changeColor);
+.addEventListener('click', () => {
+    let colorCode = changeColor();
+    navigator.clipboard.writeText(colorCode);
+});
 
 document.getElementById('shape')
-.addEventListener('click', changeShape);
+.addEventListener('click', () => {
+    let shapeGot = changeShape();
+    navigator.clipboard.writeText(`clip-path: ${window.getComputedStyle(shape).clipPath}`);
+});
 
 document.getElementById('both')
 .addEventListener('click', () => {
-    div.style.backgroundColor = getColor();
+    changeColor();
     changeShape();
 });
 
@@ -28,12 +34,19 @@ function getShape() {
 }
 
 function changeColor() {
-    div.style.backgroundColor = getColor();
+    let colorCode = getColor();
+    div.style.backgroundColor = colorCode;
+    return colorCode
 }
 
 function changeShape() {
-    shape.classList.forEach((className) => {
-        if (className !== 'shape') shape.classList.remove(className);
-    });
-    shape.classList.toggle(getShape());
+    // shape.classList.forEach((className) => {
+    //     if (className !== 'shape') shape.classList.remove(className);
+    // });
+    // shape.classList.add(getShape());
+    shape.className = '';
+    shape.classList.add('shape');
+    let shapeGet = getShape();
+    shape.classList.add(shapeGet);
+    return shapeGet;
 }
