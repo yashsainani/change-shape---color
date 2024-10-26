@@ -9,7 +9,7 @@ document.getElementById('color')
 
 document.getElementById('shape')
 .addEventListener('click', () => {
-    let shapeGot = changeShape();
+    changeShape();
     navigator.clipboard.writeText(`clip-path: ${window.getComputedStyle(shape).clipPath}`);
 });
 
@@ -45,8 +45,6 @@ function changeShape() {
     // });
     // shape.classList.add(getShape());
     shape.className = '';
-    shape.classList.add('shape');
     let shapeGet = getShape();
-    shape.classList.add(shapeGet);
-    return shapeGet;
+    shape.classList.add('shape', shapeGet);
 }
